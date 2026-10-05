@@ -23,7 +23,5 @@ def calculate_metrics(true_positives: int, false_positives: int, false_negatives
 
     return {"precision": precision, "recall": recall, "f1": f1}     
 
-def data_div(x, y):
-    if x == 0:
-        return 0
-    return x/y
+def data_div(a, b):
+    return a/b
