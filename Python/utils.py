@@ -21,4 +21,7 @@ def calculate_metrics(true_positives: int, false_positives: int, false_negatives
     f1_denominator = precision + recall
     f1 = 2 * precision * recall / f1_denominator if f1_denominator else 0.0
 
-    return {"precision": precision, "recall": recall, "f1": f1}
+    return {"precision": precision, "recall": recall, "f1": f1}     
+
+def data_div(x, y):
+    return x/y
